@@ -1,0 +1,1 @@
+export { VWOScript, VWOScriptProps } from './component';
