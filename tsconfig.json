@@ -1,21 +1,21 @@
 {
     "compilerOptions": {
-      "target": "es5",
+      "target": "ES2017", // Updated to a more modern target
       "lib": ["dom", "dom.iterable", "esnext"],
       "allowJs": true,
       "skipLibCheck": true,
       "strict": true,
       "forceConsistentCasingInFileNames": true,
       "esModuleInterop": true,
-      "module": "esnext",
+      "module": "ESNext",
       "moduleResolution": "node",
       "resolveJsonModule": true,
       "isolatedModules": true,
       "jsx": "react",
       "declaration": true,
       "emitDeclarationOnly": true,
-      "outDir": "./dist/types"
+      "outDir": "./dist/types" // Ensure this matches your desired output directory
     },
-    "include": ["src"],
+    "include": ["src/**/*"], // Ensure this includes all TypeScript files in your source directory
     "exclude": ["node_modules", "dist"]
   }
