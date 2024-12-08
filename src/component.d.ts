@@ -3,7 +3,7 @@ import { FC } from 'react';
 
 export interface VWOScriptProps extends Partial<ScriptProps> {
     accountId: string;
-    type?: 'ASYNC' | 'OSC';
+    type?: 'ASYNC' | 'SYNC';
     settingsTimeout?: number;
     hideElement?: string;
     hideElementStyle?: string;

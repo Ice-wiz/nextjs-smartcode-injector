@@ -18,11 +18,11 @@ export var VWOScript = function VWOScript(_ref) {
     console.error('VWO: Account ID is required');
     return null;
   }
-  if (type !== 'ASYNC' && type !== 'OSC') {
-    console.error('VWO: Invalid type. Must be either "ASYNC" or "OSC"');
+  if (type !== 'ASYNC' && type !== 'SYNC') {
+    console.error('VWO: Invalid type. Must be either "ASYNC" or "SYNC"');
     return null;
   }
-  if (type === 'OSC') {
+  if (type === 'SYNC') {
     return /*#__PURE__*/React.createElement("script", _extends({
       id: "vwoCode",
       strategy: "beforeInteractive",
